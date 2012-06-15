@@ -30,7 +30,7 @@ cur.execute("""CREATE TABLE IF NOT EXISTS form (
 			name VARCHAR(100) NOT NULL,
 			layout VARCHAR(100),
 			textbox VARCHAR(100),
-			active BOOLEAN NOT NULL)""")
+			active SMALLINT NOT NULL)""")
 
 cur.execute("ALTER TABLE form ADD FOREIGN KEY (layout) REFERENCES layout(name)")
 cur.execute("ALTER TABLE form ADD FOREIGN KEY (textbox) REFERENCES textbox(name)")
