@@ -6,7 +6,7 @@ import os
 import time
 
 # tijd instellen
-os.system("ntpdate ntp.ubuntu.com")
+os.system("ntpdate 134.58.255.1")
 
 # seriele verbinding
 ser=serial.Serial('/dev/ttyACM0', 115200)
